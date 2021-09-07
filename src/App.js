@@ -1,5 +1,6 @@
 import "./styles.css";
 import ReactDraft from "./reactDraft";
+import Tinymce from "./tinymce/index";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 export default function App() {
   return (
@@ -10,16 +11,20 @@ export default function App() {
             <Link to="/reactdraft">React Draft</Link>
           </div>
           <div>
-            <Link to="/about">About</Link>
+            <Link to="/tinymce">Tinymce</Link>
           </div>
           <div>
-            <Link to="/users">Users</Link>
+            <Link to="/ckeditor">CkEditor</Link>
           </div>
         </div>
         <div className="main">
           <Switch>
-            <Route path="/about"></Route>
-            <Route path="/users"></Route>
+            <Route path="/ckeditor">
+              <div> Work in Progress </div>
+            </Route>
+            <Route path="/tinymce">
+              <Tinymce></Tinymce>
+            </Route>
             <Route path="/reactdraft">
               <ReactDraft></ReactDraft>
             </Route>

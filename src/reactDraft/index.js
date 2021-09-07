@@ -4,7 +4,7 @@ import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
 import { Fragment } from "react";
-export default function () {
+export default function Index() {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
   return (
     <>
@@ -28,8 +28,8 @@ export default function () {
               { text: "EGGFRUIT", value: "eggfruit", url: "eggfruit" },
               { text: "FIG", value: "fig", url: "fig" },
               { text: "GRAPEFRUIT", value: "grapefruit", url: "grapefruit" },
-              { text: "HONEYDEW", value: "honeydew", url: "honeydew" }
-            ]
+              { text: "HONEYDEW", value: "honeydew", url: "honeydew" },
+            ],
           }}
         />
       </div>
